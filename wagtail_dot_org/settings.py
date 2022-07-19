@@ -157,6 +157,8 @@ else:
     STATIC_URL = "/static/"
 
 # Media
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+MEDIA_URL = "/media/"
 
 SERVE_MEDIA = False
 
