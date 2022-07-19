@@ -1,4 +1,5 @@
 import os
+from os.path import join
 from pathlib import Path
 
 # Basic settings
@@ -150,9 +151,7 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-STATICFILES_DIRS = [
-    os.path.join(PROJECT_DIR, "static"),
-]
+STATICFILES_DIRS = (join(PROJECT_DIR, "static_compiled"),)
 
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"
 
