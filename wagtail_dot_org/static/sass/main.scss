@@ -1,5 +1,10 @@
-@import 'variables';
+// Vendor
+@import 'vendor/normalize';
 
-body {
-  color: $color--black;
-}
+// Abstracts
+@import 'abstracts/variables';
+
+// Base
+@import 'base/fonts';
+@import 'base/base';
+
