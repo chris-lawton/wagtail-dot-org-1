@@ -1,0 +1,6 @@
+@use 'sass:math';
+
+// Output a rem value given a px value
+@function pxtorem($pxValue) {
+    @return math.div($pxValue, 20px) * 1rem;
+}
