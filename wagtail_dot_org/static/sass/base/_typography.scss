@@ -18,11 +18,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 20px;
-
-    @include media-query(large) {
-        margin: 0 0 40px;
-    }
+    margin: 0;
 }
 
 h1,
