@@ -1,0 +1,48 @@
+.button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    border-radius: 6px;
+    border: 1px solid $color--off-black;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 15px 30px;
+    color: $color--off-black;
+    
+    > p {
+        // normalise margin
+        margin: 0;
+    }
+
+    > svg {
+        margin-left: 15px;
+    }
+
+    &__dark {
+        background-color: $color--off-black;
+        color: $color--white;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        > svg {
+            margin-right: 15px;
+            margin-left: 0;
+            transform: rotate(180deg);
+        }
+    }
+
+    &__disabled {
+        background-color: $color--light-grey;
+        border-color: $color--light-grey;
+        cursor: not-allowed;
+
+        > p {
+            opacity: 0.5;
+            color: $color--off-black;
+        }
+    }
+}
