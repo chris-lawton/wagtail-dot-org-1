@@ -11,6 +11,17 @@
     padding: 15px 30px;
     color: $color--off-black;
     
+    &:hover{
+        transition: all 0.3s;
+        background-color: $color--off-black;
+        color: $color--white;
+        
+        > svg {
+            transition: all 0.3s;
+            transform: translateX(10px) scale(1.25, 1.25);
+        }
+    }
+
     > p {
         // normalise margin
         margin: 0;
@@ -23,6 +34,11 @@
     &__dark {
         background-color: $color--off-black;
         color: $color--white;
+
+        &:hover{
+            background-color: $color--white;
+            color: $color--off-black;
+        }
     }
 
     &--reverse {
@@ -32,6 +48,14 @@
             margin-right: 15px;
             margin-left: 0;
             transform: rotate(180deg);
+        }
+
+        &:hover{
+            
+            > svg {
+                transition: all 0.3s;
+                transform: rotate(180deg) translateX(10px) scale(1.25, 1.25);
+            }
         }
     }
 
@@ -43,6 +67,11 @@
         > p {
             opacity: 0.5;
             color: $color--off-black;
+        }
+
+        &:hover{
+            background-color: $color--light-grey;
+            border-color: $color--light-grey;
         }
     }
 }
