@@ -24,67 +24,68 @@ p {
 h1,
 .heading-one {
     font-size: pxtorem(45px);
-    line-height: 54px;
+    line-height: pxtorem(54px);
 
     @include media-query(large) {
         font-size: pxtorem(90px);
-        line-height: 108px;
+        line-height: pxtorem(108px);
     }
 }
 
 h2,
 .heading-two {
     font-size: pxtorem(30px);
+    line-height: pxtorem(45px);
 
     @include media-query(large) {
         font-size: pxtorem(45px);
-        line-height: 58px;
+        line-height: pxtorem(58px);
     }
 }
 
 h3,
 .heading-three {
     font-size: pxtorem(22px);
-    line-height: 33px;
+    line-height: pxtorem(33px);
 
     @include media-query(large) {
         font-size: pxtorem(30px);
-        line-height: 45px;
+        line-height: pxtorem(45px);
     }
 }
 
 h4,
 .heading-four {
     font-size: pxtorem(20px);
-    line-height: 31px;
+    line-height: pxtorem(31px);
 
     @include media-query(large) {
         font-size: pxtorem(22px);
-        line-height: 33px;
+        line-height: pxtorem(33px);
     }
 }
 
 .intro-small {
     font-size: pxtorem(20px);
-    line-height: 31px;
+    line-height: pxtorem(31px);
 
     @include media-query(large) {
         font-size: pxtorem(25px);
-        line-height: 37px;
+        line-height: pxtorem(37px);
     }
 }
 
 .intro-big {
     font-size: pxtorem(25px);
-    line-height: 37px;
+    line-height: pxtorem(37px);
 
     @include media-query(large) {
         font-size: pxtorem(40px);
-        line-height: 52px;
+        line-height: pxtorem(52px);
     }
 }
 
 small {
     font-size: pxtorem(16px);
-    line-height: 24px;
+    line-height: pxtorem(24px);
 }
