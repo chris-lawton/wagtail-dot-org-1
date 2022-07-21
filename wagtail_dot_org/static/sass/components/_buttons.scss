@@ -2,40 +2,32 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-
     border-radius: 6px;
     border: 1px solid $color--off-black;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0 auto;
     padding: 15px 30px;
     color: $color--off-black;
-    
-    &:hover{
-        transition: all 0.3s;
-        background-color: $color--off-black;
-        color: $color--white;
-        
-        > svg {
-            transition: all 0.3s;
-            transform: translateX(10px) scale(1.25, 1.25);
-        }
-    }
-
-    > p {
-        // normalise margin
-        margin: 0;
-    }
+    transition: background-color 0.3s, color 0.3s;
 
     > svg {
+        transition: transform 0.3s;
         margin-left: 15px;
     }
 
-    &__dark {
+    &:hover {
         background-color: $color--off-black;
         color: $color--white;
 
-        &:hover{
+        > svg {
+            transform: translateX(10px) scale(1.25);
+        }
+    }
+
+    &--dark {
+        background-color: $color--off-black;
+        color: $color--white;
+
+        &:hover {
             background-color: $color--white;
             color: $color--off-black;
         }
@@ -45,33 +37,30 @@
         flex-direction: row-reverse;
 
         > svg {
-            margin-right: 15px;
-            margin-left: 0;
+            margin: 0 15px 0 0;
             transform: rotate(180deg);
         }
 
-        &:hover{
-            
+        &:hover {
             > svg {
-                transition: all 0.3s;
-                transform: rotate(180deg) translateX(10px) scale(1.25, 1.25);
+                transform: rotate(180deg) translateX(10px) scale(1.25);
             }
         }
     }
 
-    &__disabled {
+    &--disabled {
         background-color: $color--light-grey;
         border-color: $color--light-grey;
-        cursor: not-allowed;
+        pointer-events: none;
 
         > p {
             opacity: 0.5;
             color: $color--off-black;
         }
+    }
 
-        &:hover{
-            background-color: $color--light-grey;
-            border-color: $color--light-grey;
-        }
+    &__text {
+        font-weight: $weight--bold;
+        line-height: 1.25rem;
     }
 }

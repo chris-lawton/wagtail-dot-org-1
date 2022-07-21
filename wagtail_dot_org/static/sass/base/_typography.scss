@@ -14,11 +14,7 @@ h6 {
 }
 
 p {
-    margin: 0 0 20px;
-
-    @include media-query(large) {
-        margin: 0 0 40px;
-    }
+    margin: 0;
 }
 
 h1,
@@ -88,11 +84,4 @@ h4,
 small {
     font-size: 0.8rem;
     line-height: 1.2rem;
-}
-
-.button-text {
-    font-weight: $weight--bold;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    font-style: normal;
 }
