@@ -1,0 +1,19 @@
+.rich-text {
+    a {
+        color: $color--teal;
+
+        &:hover {
+            // Design TBC
+        }
+    }
+
+    b {
+        font-weight: $weight--bold;
+    }
+
+    ul, ol {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
