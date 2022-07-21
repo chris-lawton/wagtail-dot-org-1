@@ -64,6 +64,26 @@ h4,
     }
 }
 
+.intro-small {
+    font-size: pxtorem(20px);
+    line-height: 31px;
+
+    @include media-query(large) {
+        font-size: pxtorem(25px);
+        line-height: 37px;
+    }
+}
+
+.intro-big {
+    font-size: pxtorem(25px);
+    line-height: 37px;
+
+    @include media-query(large) {
+        font-size: pxtorem(40px);
+        line-height: 52px;
+    }
+}
+
 small {
     font-size: pxtorem(16px);
     line-height: 24px;
