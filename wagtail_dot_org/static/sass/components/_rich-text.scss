@@ -1,0 +1,28 @@
+.rich-text {
+    a {
+        color: $color--teal;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $color--indigo;
+        }
+    }
+
+    b {
+        font-weight: $weight--bold;
+    }
+
+    ul, ol {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        margin: 0 0 20px;
+
+        @include media-query(large) {
+            margin: 0 0 40px;
+        }
+    }
+}
